@@ -6,7 +6,7 @@ $backgroundUrl = 'https://background.url/json_background.php';
 $referenceNo = date("Ymdhis");
 $detail = 'REF'.$referenceNo;
 
-
+$amount = ($_REQUEST['amount']) ? $_REQUEST['amount']:1.50;
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
